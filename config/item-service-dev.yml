@@ -6,7 +6,6 @@ spring:
       override-none: true  
 server:
   port: 8001
-  
 eureka:
   client:
     service-url:
