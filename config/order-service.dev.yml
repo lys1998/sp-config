@@ -6,6 +6,7 @@ spring:
       override-none: true  
 server:
   port: 8201
+  
 #配置连接eureka,将服务地址注册到注册中心
 eureka:
   client:
