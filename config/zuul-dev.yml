@@ -1,3 +1,5 @@
+server:
+  port: 3001
 spring:
   application:
     name: zuul
@@ -9,8 +11,7 @@ spring:
     port: 5672
     username: admin
     password: admin    
-server:
-  port: 3001
+
 eureka:
   client:
     service-url:
@@ -26,10 +27,10 @@ zuul:
     
   retryable: true
 
-#  routes:
-#    item-service: /item-service/**
-#    user-service: /user-service/**
-#    order-service: /order-service/**
+  routes:
+    item-service: /item-service/**
+    user-service: /user-service/**
+    order-service: /order-service/**
     
 ribbon:
   ConnectTimeout: 1000
